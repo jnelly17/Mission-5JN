@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Lesson Calculator";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h4>Enter information to find out how much lessons are for your needs.</h4>
+
+<form>
+    <label>Hours:</label>
+    <input id="hoursInput"/>
+    <br></br>
+    <label>Charge Per Hour ($):</label>
+    <input type="text" readonly value="100" id="perHour"/>
+    <br /><br />
+    <input type="submit" value="Calculate Total" id="btnSubmit"/>
+</form>
+
+<script src="js/site.js"></script>
+
+<br /><br />
+<div id="totalOutput"></div>
